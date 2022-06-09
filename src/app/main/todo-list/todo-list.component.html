@@ -1,0 +1,10 @@
+<mat-list>
+    <mat-list-item *ngFor="let item of list">
+        <mat-checkbox [checked]="item.completed" color="primary" class="checkbox" (click)="updateToDoItem(item)"></mat-checkbox>
+        <p class="desc">{{item.description}}</p>
+        <p class="date">Created: {{item.date | date:'MM-dd-yyyy'}}</p>
+        <button mat-mini-fab (click)="removeTodo(item.id)" color="primary">
+            <mat-icon>delete</mat-icon>
+        </button>
+    </mat-list-item>
+</mat-list>

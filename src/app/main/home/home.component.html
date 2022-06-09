@@ -1,0 +1,5 @@
+<div class="home">
+    <h1>Tasks</h1>
+    <todo-list [list]="toDoList" (deleteToDo)="deleteToDo($event)" (updateToDo)="updateToDo($event)"></todo-list>
+    <new-todo (createToDo)="createToDo($event)"></new-todo>
+</div>

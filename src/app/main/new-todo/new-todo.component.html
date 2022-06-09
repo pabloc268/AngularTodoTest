@@ -1,0 +1,7 @@
+<form [formGroup]="toDoForm" class="form" #myForm="ngForm">
+    <mat-form-field>
+        <mat-label>Todo description</mat-label>
+        <input matInput type="text" formControlName="description">
+    </mat-form-field>
+    <button mat-raised-button (click)="sendToDo()" class="add">Add</button>
+</form>
